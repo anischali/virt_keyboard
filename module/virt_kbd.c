@@ -17,20 +17,42 @@ struct virt_keyboard {
     struct input_dev *input;
 };
 
+static ssize_t store_key(struct device *dev, struct device_attribute *attr,
+			  const char *buf, size_t len)
+{
+	int err = 0;
+	unsigned long key = 0;
+
+	err = kstrtoul(buf, 0, &key);
+	if (err)
+		return err;
+
+	dev_info(dev, "you tapped key: %lu", key);
+
+	return len;
+}
 
 
 
+static DEVICE_ATTR(key, S_IWUSR, NULL, store_key);
 
+static struct attribute *virt_keyboard_attrs[] = {
+	&dev_attr_key.attr,
+	NULL
+};
+
+static const struct attribute_group virt_keyboard_attr_group = {
+	.attrs	= virt_keyboard_attrs,
+};
 
 static int virt_kbd_probe(struct platform_device *pdev)
 {
-	struct device *dev = &pdev->dev;
 	struct virt_keyboard *kbd = NULL;
 	struct input_dev *input = NULL;
 	int err = 0;
 
 	
-	kbd = devm_kzalloc(dev, sizeof(struct virt_keyboard), GFP_KERNEL);
+	kbd = devm_kzalloc(&pdev->dev, sizeof(struct virt_keyboard), GFP_KERNEL);
 	if (!kbd)
 		return -ENOMEM;
 	
@@ -49,15 +71,33 @@ static int virt_kbd_probe(struct platform_device *pdev)
 	kbd->input = input;
 
 	err = input_register_device(kbd->input);
-	if (err) {
-		input_free_device(kbd->input);
-		kbd->input = NULL;
-		return err;
+	if (err)
+	{
+		dev_err(&pdev->dev,
+			"Failed to register input device: %d\n", err);
+		goto input_err;
 	}
-	
+
+	err = sysfs_create_group(&pdev->dev.kobj,
+				 &virt_keyboard_attr_group);
+	if (err) {
+		dev_err(&pdev->dev,
+			"Failed to create attribute group: %d\n", err);
+		goto input_err;
+	}
+
 	platform_set_drvdata(pdev, kbd);
-	printk("Virtual keyboard probed...\n");
+	
+	dev_info(&pdev->dev, 
+		"Virtual keyboard successfully probed...\n");
+	
 	return 0;
+
+input_err:
+	input_free_device(kbd->input);
+	kbd->input = NULL;
+
+	return err;
 }
 
 static int virt_kbd_remove(struct platform_device *pdev)
@@ -68,8 +108,12 @@ static int virt_kbd_remove(struct platform_device *pdev)
 		input_unregister_device(kbd->input);
 		kbd->input = NULL;
 	}
-	printk("Virtual keyboard removed...\n");
 
+	sysfs_remove_group(&pdev->dev.kobj,
+				 &virt_keyboard_attr_group);
+
+	dev_info(&pdev->dev, 
+		"Virtual keyboard successfully removed...\n");
 	return 0;
 }
 
