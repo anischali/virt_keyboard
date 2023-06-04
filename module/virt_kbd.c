@@ -125,7 +125,7 @@ static const struct of_device_id id_table[] = {
 
 static struct platform_driver virt_kbd_driver = {
 	.driver = {
-		.name = "virtual_keyboard",
+		.name = "virt-keyboard",
 		.of_match_table = id_table,
 	},
 	.probe = virt_kbd_probe,
