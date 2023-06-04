@@ -187,11 +187,8 @@ static ssize_t store_keydown(struct device *dev, struct device_attribute *attr,
 	if (err)
 		return err;
 
-	dev_info(dev, "you tapped key: %lu", key);
-
 	input_report_key(kbd->input, key, 1);
 	input_sync(kbd->input);
-	
 
 	return len;
 }
@@ -207,12 +204,8 @@ static ssize_t store_keyup(struct device *dev, struct device_attribute *attr,
 	if (err)
 		return err;
 
-	dev_info(dev, "you tapped key: %lu", key);
-
-
 	input_report_key(kbd->input, key, 0);
 	input_sync(kbd->input);
-
 
 	return len;
 }
