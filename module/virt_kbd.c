@@ -119,7 +119,7 @@ static int virt_kbd_remove(struct platform_device *pdev)
 
 
 static const struct of_device_id id_table[] = {
-	{ .name = "virt-keyboard", .id = 0, },
+	{ .name = "virt-keyboard" },
 	{},
 };
 

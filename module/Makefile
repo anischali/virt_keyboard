@@ -1,5 +1,5 @@
-obj-m:=virt_kbd.o
-obj-m:=virt_kbd_dev.o
+obj-m:=virt_kbd.o virt_kbd_dev.o
+
 
 KDIR?="/usr/src/linux-headers-$(shell uname -r)"
 

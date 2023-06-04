@@ -13,7 +13,6 @@
 
 static struct platform_device virt_keyboard_dev = {
 	.name		= "virt-keyboard",
-	.id = 0,
     .dev = {
 		.platform_data		= NULL,
 	},
