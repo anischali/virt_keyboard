@@ -118,34 +118,23 @@ static int virt_kbd_remove(struct platform_device *pdev)
 }
 
 
+static const struct of_device_id id_table[] = {
+	{ .name = "virt-keyboard", .id = 0, },
+	{},
+};
+
 static struct platform_driver virt_kbd_driver = {
 	.driver = {
 		.name = "virtual_keyboard",
+		.of_match_table = id_table,
 	},
 	.probe = virt_kbd_probe,
 	.remove = virt_kbd_remove
 };
 
 
-
-/*
-static int __init virt_keyboard_init(void)
-{
-	platform_driver_probe(&virt_kbd_driver, virt_kbd_probe);	
-	return 0;
-}
-
-static void __exit virt_keyboard_exit(void)
-{
-	
-}
-
-module_init(virt_keyboard_init);
-module_exit(virt_keyboard_exit);
-*/
-
-module_platform_driver_probe(virt_kbd_driver, virt_kbd_probe);
+module_platform_driver(virt_kbd_driver);
 MODULE_LICENSE("GPL");
 MODULE_DESCRIPTION(DRIVER_DESC);
 MODULE_AUTHOR(DRIVER_AUTHOR);
-MODULE_ALIAS("platform:virtual-keyboard");
+MODULE_ALIAS("platform:virt-keyboard");
