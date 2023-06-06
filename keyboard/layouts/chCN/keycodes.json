@@ -8,7 +8,8 @@
             "caps":"Esc",
             "shift":"Esc",
             "alt_keycodes":[],
-            "key_type":0
+            "key_type":0,
+            "action":""
         },
         "41":
         {
@@ -17,7 +18,8 @@
             "caps":"~",
             "shift":"~",
             "alt_keycodes":[],
-            "key_type":0
+            "key_type":0,
+            "action":""
         },
         "2":
         {
@@ -26,7 +28,8 @@
             "caps":"!",
             "shift":"!",
             "alt_keycodes":[],
-            "key_type":0
+            "key_type":0,
+            "action":""
         },
         "3":
         {
@@ -35,7 +38,8 @@
             "caps":"@",
             "shift":"@",
             "alt_keycodes":[],
-            "key_type":0
+            "key_type":0,
+            "action":""
         },
         "4":
         {
@@ -44,7 +48,8 @@
             "caps":"#",
             "shift":"#",
             "alt_keycodes":[],
-            "key_type":0
+            "key_type":0,
+            "action":""
         },
         "5":
         {
@@ -53,7 +58,8 @@
             "caps":"$",
             "shift":"$",
             "alt_keycodes":[],
-            "key_type":0
+            "key_type":0,
+            "action":""
         },
         "6":
         {
@@ -62,7 +68,8 @@
             "caps":"%",
             "shift":"%",
             "alt_keycodes":[],
-            "key_type":0
+            "key_type":0,
+            "action":""
         },
         "7":
         {
@@ -71,7 +78,8 @@
             "caps":"^",
             "shift":"^",
             "alt_keycodes":[],
-            "key_type":0
+            "key_type":0,
+            "action":""
         },
         "8":
         {
@@ -80,7 +88,8 @@
             "caps":"&",
             "shift":"&",
             "alt_keycodes":[],
-            "key_type":0
+            "key_type":0,
+            "action":""
         },
         "9":
         {
@@ -89,7 +98,8 @@
             "caps":"*",
             "shift":"*",
             "alt_keycodes":[],
-            "key_type":0
+            "key_type":0,
+            "action":""
         },
         "10":
         {
@@ -98,7 +108,8 @@
             "caps":"(",
             "shift":"(",
             "alt_keycodes":[],
-            "key_type":0
+            "key_type":0,
+            "action":""
         },
         "11":
         {
@@ -107,7 +118,8 @@
             "caps":")",
             "shift":")",
             "alt_keycodes":[],
-            "key_type":0
+            "key_type":0,
+            "action":""
         },
         "12":
         {
@@ -116,7 +128,8 @@
             "caps":"_",
             "shift":"_",
             "alt_keycodes":[],
-            "key_type":0
+            "key_type":0,
+            "action":""
         },
         "13":
         {
@@ -125,7 +138,8 @@
             "caps":"+",
             "shift":"+",
             "alt_keycodes":[],
-            "key_type":0
+            "key_type":0,
+            "action":""
         },
         "14":
         {
@@ -134,7 +148,8 @@
             "caps":"Backspace",
             "shift":"Backspace",
             "alt_keycodes":[],
-            "key_type":0
+            "key_type":0,
+            "action":""
         },
         "15":
         {
@@ -143,7 +158,8 @@
             "caps":"Tab",
             "shift":"Tab",
             "alt_keycodes":[],
-            "key_type":0
+            "key_type":0,
+            "action":""
         },
         "16":
         {
@@ -152,7 +168,8 @@
             "caps":"q",
             "shift":"q",
             "alt_keycodes":[2,3,4,5,6,7,8,9,10],
-            "key_type":0
+            "key_type":0,
+            "action":""
         },
         "17":
         {
@@ -161,7 +178,8 @@
             "caps":"w",
             "shift":"w",
             "alt_keycodes":[2,3,4,5,6,7,8,9,10],
-            "key_type":0
+            "key_type":0,
+            "action":""
         },
         "18":
         {
@@ -170,7 +188,8 @@
             "caps":"e",
             "shift":"e",
             "alt_keycodes":[2,3,4,5,6,7,8,9,10],
-            "key_type":0
+            "key_type":0,
+            "action":""
         },
         "19":
         {
@@ -179,7 +198,8 @@
             "caps":"r",
             "shift":"r",
             "alt_keycodes":[2,3,4,5,6,7,8,9,10],
-            "key_type":0
+            "key_type":0,
+            "action":""
         },
         "20":
         {
@@ -188,7 +208,8 @@
             "caps":"t",
             "shift":"t",
             "alt_keycodes":[2,3,4,5,6,7,8,9,10],
-            "key_type":0
+            "key_type":0,
+            "action":""
         },
         "21":{
             "text":"卜", 
@@ -196,7 +217,8 @@
             "caps":"y",
             "shift":"y",
             "alt_keycodes":[2,3,4,5,6,7,8,9,10],
-            "key_type":0
+            "key_type":0,
+            "action":""
         },
         "22":
         {
@@ -205,7 +227,8 @@
             "caps":"u",
             "shift":"u",
             "alt_keycodes":[2,3,4,5,6,7,8,9,10],
-            "key_type":0
+            "key_type":0,
+            "action":""
         },
         "23":
         {
@@ -214,7 +237,8 @@
             "caps":"i",
             "shift":"i",
             "alt_keycodes":[2,3,4,5,6,7,8,9,10],
-            "key_type":0
+            "key_type":0,
+            "action":""
         },
         "24":
         {
@@ -223,7 +247,8 @@
             "caps":"o",
             "shift":"o",
             "alt_keycodes":[2,3,4,5,6,7,8,9,10],
-            "key_type":0
+            "key_type":0,
+            "action":""
         },
         "25":        
         {
@@ -232,7 +257,8 @@
             "caps":"p",
             "shift":"p",
             "alt_keycodes":[2,3,4,5,6,7,8,9,10],
-            "key_type":0
+            "key_type":0,
+            "action":""
         },
         "26":
         {
@@ -241,7 +267,8 @@
             "caps":"{",
             "shift":"{",
             "alt_keycodes":[],
-            "key_type":0
+            "key_type":0,
+            "action":""
         },
         "27":
         {
@@ -250,7 +277,8 @@
             "caps":"}",
             "shift":"}",
             "alt_keycodes":[],
-            "key_type":0
+            "key_type":0,
+            "action":""
         },
         "43":
         {
@@ -259,7 +287,8 @@
             "caps":"|",
             "shift":"|",
             "alt_keycodes":[],
-            "key_type":0
+            "key_type":0,
+            "action":""
         },
         "42":
         {
@@ -268,7 +297,8 @@
             "caps":"caps_lock",
             "shift":"shift",
             "alt_keycodes":[],
-            "key_type":0
+            "key_type":0,
+            "action":""
         },
         "30":        
         {
@@ -277,7 +307,8 @@
             "caps":"a",
             "shift":"a",
             "alt_keycodes":[2,3,4,5,6,7,8,9,10],
-            "key_type":0
+            "key_type":0,
+            "action":""
         },
         "31":        
         {
@@ -286,7 +317,8 @@
             "caps":"s",
             "shift":"s",
             "alt_keycodes":[2,3,4,5,6,7,8,9,10],
-            "key_type":0
+            "key_type":0,
+            "action":""
         },
         "32":        
         {
@@ -295,7 +327,8 @@
             "caps":"d",
             "shift":"d",
             "alt_keycodes":[2,3,4,5,6,7,8,9,10],
-            "key_type":0
+            "key_type":0,
+            "action":""
         },
         "33":        
         {
@@ -304,7 +337,8 @@
             "caps":"f",
             "shift":"f",
             "alt_keycodes":[],
-            "key_type":0
+            "key_type":0,
+            "action":""
         },
         "34":        
         {
@@ -313,7 +347,8 @@
             "caps":"g",
             "shift":"g",
             "alt_keycodes":[2,3,4,5,6,7,8,9,10],
-            "key_type":0
+            "key_type":0,
+            "action":""
         },
         "35":        
         {
@@ -322,7 +357,8 @@
             "caps":"h",
             "shift":"h",
             "alt_keycodes":[2,3,4,5,6,7,8,9,10],
-            "key_type":0
+            "key_type":0,
+            "action":""
         },
         "36":        
         {
@@ -331,7 +367,8 @@
             "caps":"j",
             "shift":"j",
             "alt_keycodes":[2,3,4,5,6,7,8,9,10],
-            "key_type":0
+            "key_type":0,
+            "action":""
         },
         "37":        
         {
@@ -340,7 +377,8 @@
             "caps":"k",
             "shift":"k",
             "alt_keycodes":[2,3,4,5,6,7,8,9,10],
-            "key_type":0
+            "key_type":0,
+            "action":""
         },
         "38":        
         {
@@ -349,7 +387,8 @@
             "caps":"l",
             "shift":"l",
             "alt_keycodes":[2,3,4,5,6,7,8,9,10],
-            "key_type":0
+            "key_type":0,
+            "action":""
         },
         "39":        
         {
@@ -358,7 +397,8 @@
             "caps":":",
             "shift":":",
             "alt_keycodes":[],
-            "key_type":0
+            "key_type":0,
+            "action":""
         },
         "40":        
         {
@@ -367,7 +407,8 @@
             "caps":"\"",
             "shift":"\"",
             "alt_keycodes":[],
-            "key_type":0
+            "key_type":0,
+            "action":""
         },
         "28":
         {
@@ -376,7 +417,8 @@
             "caps":"enter",
             "shift":"enter",
             "alt_keycodes":[],
-            "key_type":0
+            "key_type":0,
+            "action":""
         },
         "!#1":
         {
@@ -403,7 +445,8 @@
             "caps":"Z",
             "shift":"Z",
             "alt_keycodes":[],
-            "key_type":0
+            "key_type":0,
+            "action":""
         },
         "45":
         {
@@ -412,7 +455,8 @@
             "caps":"x",
             "shift":"x",
             "alt_keycodes":[2,3,4,5,6,7,8,9,10],
-            "key_type":0
+            "key_type":0,
+            "action":""
         },
         "46":
         {
@@ -421,7 +465,8 @@
             "caps":"c",
             "shift":"c",
             "alt_keycodes":[2,3,4,5,6,7,8,9,10],
-            "key_type":0
+            "key_type":0,
+            "action":""
         },
         "47":
         {
@@ -430,7 +475,8 @@
             "caps":"v",
             "shift":"v",
             "alt_keycodes":[2,3,4,5,6,7,8,9,10],
-            "key_type":0
+            "key_type":0,
+            "action":""
         },
         "48":
         {
@@ -439,7 +485,8 @@
             "caps":"b",
             "shift":"b",
             "alt_keycodes":[2,3,4,5,6,7,8,9,10],
-            "key_type":0
+            "key_type":0,
+            "action":""
         },
         "49":
         {
@@ -448,7 +495,8 @@
             "caps":"n",
             "shift":"n",
             "alt_keycodes":[2,3,4,5,6,7,8,9,10],
-            "key_type":0
+            "key_type":0,
+            "action":""
         },
         "50":
         {
@@ -457,7 +505,8 @@
             "caps":"m",
             "shift":"m",
             "alt_keycodes":[2,3,4,5,6,7,8,9,10],
-            "key_type":0
+            "key_type":0,
+            "action":""
         },
         "51":
         {
@@ -466,7 +515,8 @@
             "caps":"<",
             "shift":"<",
             "alt_keycodes":[],
-            "key_type":0
+            "key_type":0,
+            "action":""
         },
         "52":
         {
@@ -475,7 +525,8 @@
             "caps":">",
             "shift":">",
             "alt_keycodes":[],
-            "key_type":0
+            "key_type":0,
+            "action":""
         },
         "53":
         {
@@ -484,7 +535,8 @@
             "caps":"?",
             "shift":"?",
             "alt_keycodes":[],
-            "key_type":0
+            "key_type":0,
+            "action":""
         },
         "54":
         {
@@ -520,7 +572,8 @@
             "caps":"Space",
             "shift":"Space",
             "alt_keycodes":[],
-            "key_type":0
+            "key_type":0,
+            "action":""
         },
         "101":
         {
