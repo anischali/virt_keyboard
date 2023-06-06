@@ -1,0 +1,94 @@
+{
+    "keymap_style":{
+        "width":300,
+        "height":100,
+        "background":{"r":48,"g":48,"b":42},
+        "margins":"2px"
+    },
+    "button_styles": {
+        "simple_btn": {
+            "width": 12,
+            "height": 5,
+            "background":{"r":80,"g":80,"b":80},
+            "color":{"r":255,"g":255,"b":255}
+        },
+        "shift_btn": {
+            "width": 20,
+            "height": 5,
+            "background":{"r":80,"g":80,"b":80},
+            "color":{"r":255,"g":255,"b":255}
+        },
+        "space_btn": {
+            "width": 60,
+            "height": 5,
+            "background":{"r":80,"g":80,"b":80},
+            "color":{"r":255,"g":255,"b":255}
+        },
+        "ctrl_btn": {
+            "width": 18,
+            "height": 5,
+            "background":{"r":80,"g":80,"b":80},
+            "color":{"r":255,"g":255,"b":255}
+        },
+        "enter_btn": {
+            "width": 16,
+            "height": 5,
+            "background":{"r":80,"g":80,"b":80},
+            "color":{"r":255,"g":255,"b":255}
+        },
+        "lang_btn": {
+            "width": 20,
+            "height": 5,
+            "background":{"r":80,"g":80,"b":80},
+            "color":{"r":255,"g":255,"b":255}
+        },
+        "emoj": {
+            "width": 17,
+            "height": 5,
+            "background":{"r":80,"g":80,"b":80},
+            "color":{"r":255,"g":255,"b":255}
+        }
+    },
+    "applyies":
+    {
+        "by_type":
+        {
+            "0":
+            {    
+                "style":"simple_btn"
+            }
+        },
+        "by_keycode":
+        {
+            "42":
+            {
+                "style":"shift_btn"
+            },
+            "54":
+            {
+                "style":"shift_btn"
+            },
+            "57":
+            {
+                "style":"space_btn"
+            },
+            "97":
+            {
+                "style":"ctrl_btn"
+            },
+            "28":
+            {
+                "style":"enter_btn"
+            },
+            "lang":
+            {
+                "style":"lang_btn"
+            },
+            "emoj":
+            {
+                "style":"lang_btn"
+            }
+        }
+    }
+
+}
