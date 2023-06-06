@@ -1,0 +1,95 @@
+{
+    "keymap_style":{
+        "width":300,
+        "height":100,
+        "background":{"r":48,"g":48,"b":42},
+        "margins":1,
+        "keys_height": 5
+    },
+    "style_def": {
+        "simple_btn": {
+            "width": 12,
+            
+            "background":{"r":80,"g":80,"b":80},
+            "color":{"r":255,"g":255,"b":255}
+        },
+        "shift_btn": {
+            "width": 20,
+            
+            "background":{"r":80,"g":80,"b":80},
+            "color":{"r":255,"g":255,"b":255}
+        },
+        "space_btn": {
+            "width": 60,
+            
+            "background":{"r":80,"g":80,"b":80},
+            "color":{"r":255,"g":255,"b":255}
+        },
+        "ctrl_btn": {
+            "width": 18,
+            
+            "background":{"r":80,"g":80,"b":80},
+            "color":{"r":255,"g":255,"b":255}
+        },
+        "enter_btn": {
+            "width": 16,
+            
+            "background":{"r":80,"g":80,"b":80},
+            "color":{"r":255,"g":255,"b":255}
+        },
+        "lang_btn": {
+            "width": 20,
+            
+            "background":{"r":80,"g":80,"b":80},
+            "color":{"r":255,"g":255,"b":255}
+        },
+        "emoj": {
+            "width": 17,
+            
+            "background":{"r":80,"g":80,"b":80},
+            "color":{"r":255,"g":255,"b":255}
+        }
+    },
+    "keys_style":
+    {
+        "by_type":
+        {
+            "0":
+            {    
+                "style":"simple_btn"
+            }
+        },
+        "by_keycode":
+        {
+            "42":
+            {
+                "style":"shift_btn"
+            },
+            "54":
+            {
+                "style":"shift_btn"
+            },
+            "57":
+            {
+                "style":"space_btn"
+            },
+            "97":
+            {
+                "style":"ctrl_btn"
+            },
+            "28":
+            {
+                "style":"enter_btn"
+            },
+            "lang":
+            {
+                "style":"lang_btn"
+            },
+            "emoj":
+            {
+                "style":"lang_btn"
+            }
+        }
+    }
+
+}
