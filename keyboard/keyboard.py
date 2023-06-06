@@ -2,11 +2,15 @@
 
 import tkinter as tk
 import keycodes as keycode
+from layouts.keymap import Keymap
 
 keydown="/sys/devices/platform/virt-keyboard.0/keydown"
 keyup="/sys/devices/platform/virt-keyboard.0/keyup"
 
-keymap = {
+chZH_keymap = Keymap("chZH")
+
+
+keymap_lst = {
     "ESC": keycode.KEY_ESC,
     "1": keycode.KEY_1,
     "2": keycode.KEY_2,
@@ -170,6 +174,7 @@ with open(keydown, "w") as skeydown, open(keyup, "w") as skeyup:
 
     
     def send_keycode(kcode, status):
+        print("keycode: {} event: {}".format(kcode, status))
         if status:
             skeydown.write(str(kcode))
             skeydown.flush()
@@ -190,17 +195,27 @@ with open(keydown, "w") as skeydown, open(keyup, "w") as skeyup:
     x = 0
     y = 0
 
-    for k in keymap.keys():
-        if not k.startswith("."):
-            b = tk.Button(text=k, width=3, height=2)
-            b.bind("<ButtonPress>", lambda eventp, kcode=keymap[k] : send_keycode(kcode, 1))
-            b.bind("<ButtonRelease>", lambda eventr, kcode=keymap[k] : send_keycode(kcode, 0))
+#    for k in keymap_lst.keys():
+#        if not k.startswith("."):
+#            b = tk.Button(text=k, width=3, height=2)
+#            b.bind("<ButtonPress>", lambda eventp, kcode=keymap_lst[k] : send_keycode(kcode, 1))
+#            b.bind("<ButtonRelease>", lambda eventr, kcode=keymap_lst[k] : send_keycode(kcode, 0))
+#            b.place(x=x, y=y)
+#            x += 50
+#            if x + 50 >= win.winfo_screenwidth():
+#                y += 50
+#                x = 0
+    for l in chZH_keymap.keys:
+        for c in l:
+            b = tk.Button(text=c.keycode.text, width=3, height=2)
+            b.bind("<ButtonPress>", lambda eventp, kcode=c.keycode.keycode : send_keycode(kcode, 1))
+            b.bind("<ButtonRelease>", lambda eventr, kcode=c.keycode.keycode : send_keycode(kcode, 0))
             b.place(x=x, y=y)
             x += 50
             if x + 50 >= win.winfo_screenwidth():
                 y += 50
                 x = 0
-    
+
     button_exit = tk.Button(text="exit", width=15, height=2, command=exit)
     button_exit.place(x=x+50, y=y)
 

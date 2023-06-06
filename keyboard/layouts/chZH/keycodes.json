@@ -3,8 +3,8 @@
     {
         "1":
         {
-            "principal":"Esc",
-            "alternatives":[],
+            "text":"Esc",
+            "alt_text":[],
             "caps":"Esc",
             "shift":"Esc",
             "alt_keycodes":[],
@@ -12,8 +12,8 @@
         },
         "41":
         {
-            "principal":"`",
-            "alternatives":[],
+            "text":"`",
+            "alt_text":[],
             "caps":"~",
             "shift":"~",
             "alt_keycodes":[],
@@ -21,8 +21,8 @@
         },
         "2":
         {
-            "principal":"1",
-            "alternatives":[],
+            "text":"1",
+            "alt_text":[],
             "caps":"!",
             "shift":"!",
             "alt_keycodes":[],
@@ -30,8 +30,8 @@
         },
         "3":
         {
-            "principal":"2",
-            "alternatives":[],
+            "text":"2",
+            "alt_text":[],
             "caps":"@",
             "shift":"@",
             "alt_keycodes":[],
@@ -39,8 +39,8 @@
         },
         "4":
         {
-            "principal":"3",
-            "alternatives":[],
+            "text":"3",
+            "alt_text":[],
             "caps":"#",
             "shift":"#",
             "alt_keycodes":[],
@@ -48,8 +48,8 @@
         },
         "5":
         {
-            "principal":"4",
-            "alternatives":[],
+            "text":"4",
+            "alt_text":[],
             "caps":"$",
             "shift":"$",
             "alt_keycodes":[],
@@ -57,8 +57,8 @@
         },
         "6":
         {
-            "principal":"5",
-            "alternatives":[],
+            "text":"5",
+            "alt_text":[],
             "caps":"%",
             "shift":"%",
             "alt_keycodes":[],
@@ -66,8 +66,8 @@
         },
         "7":
         {
-            "principal":"6",
-            "alternatives":[],
+            "text":"6",
+            "alt_text":[],
             "caps":"^",
             "shift":"^",
             "alt_keycodes":[],
@@ -75,8 +75,8 @@
         },
         "8":
         {
-            "principal":"7",
-            "alternatives":[],
+            "text":"7",
+            "alt_text":[],
             "caps":"&",
             "shift":"&",
             "alt_keycodes":[],
@@ -84,8 +84,8 @@
         },
         "9":
         {
-            "principal":"8",
-            "alternatives":[],
+            "text":"8",
+            "alt_text":[],
             "caps":"*",
             "shift":"*",
             "alt_keycodes":[],
@@ -93,8 +93,8 @@
         },
         "10":
         {
-            "principal":"9",
-            "alternatives":[],
+            "text":"9",
+            "alt_text":[],
             "caps":"(",
             "shift":"(",
             "alt_keycodes":[],
@@ -102,8 +102,8 @@
         },
         "11":
         {
-            "principal":"0",
-            "alternatives":[],
+            "text":"0",
+            "alt_text":[],
             "caps":")",
             "shift":")",
             "alt_keycodes":[],
@@ -111,8 +111,8 @@
         },
         "12":
         {
-            "principal":"-",
-            "alternatives":[],
+            "text":"-",
+            "alt_text":[],
             "caps":"_",
             "shift":"_",
             "alt_keycodes":[],
@@ -120,8 +120,8 @@
         },
         "13":
         {
-            "principal":"=",
-            "alternatives":[],
+            "text":"=",
+            "alt_text":[],
             "caps":"+",
             "shift":"+",
             "alt_keycodes":[],
@@ -129,8 +129,8 @@
         },
         "14":
         {
-            "principal":"Backspace",
-            "alternatives":[],
+            "text":"Backspace",
+            "alt_text":[],
             "caps":"Backspace",
             "shift":"Backspace",
             "alt_keycodes":[],
@@ -138,8 +138,8 @@
         },
         "15":
         {
-            "principal":"Tab",
-            "alternatives":[],
+            "text":"Tab",
+            "alt_text":[],
             "caps":"Tab",
             "shift":"Tab",
             "alt_keycodes":[],
@@ -147,8 +147,8 @@
         },
         "16":
         {
-            "principal":"手", 
-            "alternatives":["接", "拉", "表", "手", "提", "指", "換", "持","描"],
+            "text":"手", 
+            "alt_text":["接", "拉", "表", "手", "提", "指", "換", "持","描"],
             "caps":"q",
             "shift":"q",
             "alt_keycodes":[2,3,4,5,6,7,8,9,10],
@@ -156,8 +156,8 @@
         },
         "17":
         {
-            "principal":"田", 
-            "alternatives":["國","因","圖","果","四","界","羅","回","田"],
+            "text":"田", 
+            "alt_text":["國","因","圖","果","四","界","羅","回","田"],
             "caps":"w",
             "shift":"w",
             "alt_keycodes":[2,3,4,5,6,7,8,9,10],
@@ -165,8 +165,8 @@
         },
         "18":
         {
-            "principal":"水", 
-            "alternatives":["法","港", "灣", "海","洲","源","治", "澳", "水"],
+            "text":"水", 
+            "alt_text":["法","港", "灣", "海","洲","源","治", "澳", "水"],
             "caps":"e",
             "shift":"e",
             "alt_keycodes":[2,3,4,5,6,7,8,9,10],
@@ -174,8 +174,8 @@
         },
         "19":
         {
-            "principal":"口", 
-            "alternatives":["民", "路", "員", "戰", "品", "口", "足", "號", "另"],
+            "text":"口", 
+            "alt_text":["民", "路", "員", "戰", "品", "口", "足", "號", "另"],
             "caps":"r",
             "shift":"r",
             "alt_keycodes":[2,3,4,5,6,7,8,9,10],
@@ -183,16 +183,16 @@
         },
         "20":
         {
-            "principal":"廿", 
-            "alternatives":["基", "斯", "其", "期", "對", "歡", "美", "前", "廿"],
+            "text":"廿", 
+            "alt_text":["基", "斯", "其", "期", "對", "歡", "美", "前", "廿"],
             "caps":"t",
             "shift":"t",
             "alt_keycodes":[2,3,4,5,6,7,8,9,10],
             "key_type":0
         },
         "21":{
-            "principal":"卜", 
-            "alternatives":["文", "新", "上", "於", "迎", "這", "主", "此", "卜"],
+            "text":"卜", 
+            "alt_text":["文", "新", "上", "於", "迎", "這", "主", "此", "卜"],
             "caps":"y",
             "shift":"y",
             "alt_keycodes":[2,3,4,5,6,7,8,9,10],
@@ -200,8 +200,8 @@
         },
         "22":
         {
-            "principal":"山", 
-            "alternatives":["導", "山", "岸", "峰", "豐", "岩", "崇", "凱", "崎"],
+            "text":"山", 
+            "alt_text":["導", "山", "岸", "峰", "豐", "岩", "崇", "凱", "崎"],
             "caps":"u",
             "shift":"u",
             "alt_keycodes":[2,3,4,5,6,7,8,9,10],
@@ -209,8 +209,8 @@
         },
         "23":
         {
-            "principal":"戈",
-            "alternatives":["為", "能", "成", "之", "或", "台", "州", "次", "戈"],
+            "text":"戈",
+            "alt_text":["為", "能", "成", "之", "或", "台", "州", "次", "戈"],
             "caps":"i",
             "shift":"i",
             "alt_keycodes":[2,3,4,5,6,7,8,9,10],
@@ -218,8 +218,8 @@
         },
         "24":
         {
-            "principal":"人",
-            "alternatives":["府", "人", "您", "會", "使", "件", "他", "作", "合"],
+            "text":"人",
+            "alt_text":["府", "人", "您", "會", "使", "件", "他", "作", "合"],
             "caps":"o",
             "shift":"o",
             "alt_keycodes":[2,3,4,5,6,7,8,9,10],
@@ -227,8 +227,8 @@
         },
         "25":        
         {
-            "principal":"心",
-            "alternatives":["也", "世", "性", "比", "包", "心", "快", "情", "必"],
+            "text":"心",
+            "alt_text":["也", "世", "性", "比", "包", "心", "快", "情", "必"],
             "caps":"p",
             "shift":"p",
             "alt_keycodes":[2,3,4,5,6,7,8,9,10],
@@ -236,8 +236,8 @@
         },
         "26":
         {
-            "principal":"[",
-            "alternatives":[],
+            "text":"[",
+            "alt_text":[],
             "caps":"{",
             "shift":"{",
             "alt_keycodes":[],
@@ -245,8 +245,8 @@
         },
         "27":
         {
-            "principal":"]",
-            "alternatives":[],
+            "text":"]",
+            "alt_text":[],
             "caps":"}",
             "shift":"}",
             "alt_keycodes":[],
@@ -254,8 +254,8 @@
         },
         "43":
         {
-            "principal":"\\",
-            "alternatives":[],
+            "text":"\\",
+            "alt_text":[],
             "caps":"|",
             "shift":"|",
             "alt_keycodes":[],
@@ -263,8 +263,8 @@
         },
         "42":
         {
-            "principal":"shift",
-            "alternatives":[],
+            "text":"shift",
+            "alt_text":[],
             "caps":"caps_lock",
             "shift":"shift",
             "alt_keycodes":[],
@@ -272,8 +272,8 @@
         },
         "30":        
         {
-            "principal":"日",
-            "alternatives":["是", "日", "時", "明", "最", "題", "巴", "間", "曰"],
+            "text":"日",
+            "alt_text":["是", "日", "時", "明", "最", "題", "巴", "間", "曰"],
             "caps":"a",
             "shift":"a",
             "alt_keycodes":[2,3,4,5,6,7,8,9,10],
@@ -281,8 +281,8 @@
         },
         "31":        
         {
-            "principal":"尸",
-            "alternatives":["局", "已", "區", "尼", "長", "展", "馬", "司", "屬"],
+            "text":"尸",
+            "alt_text":["局", "已", "區", "尼", "長", "展", "馬", "司", "屬"],
             "caps":"s",
             "shift":"s",
             "alt_keycodes":[2,3,4,5,6,7,8,9,10],
@@ -290,8 +290,8 @@
         },
         "32":        
         {
-            "principal":"木",
-            "alternatives":["本", "權", "來", "查", "相", "格", "標", "機", "木"],
+            "text":"木",
+            "alt_text":["本", "權", "來", "查", "相", "格", "標", "機", "木"],
             "caps":"d",
             "shift":"d",
             "alt_keycodes":[2,3,4,5,6,7,8,9,10],
@@ -299,8 +299,8 @@
         },
         "33":        
         {
-            "principal":"火",
-            "alternatives":["常", "當", "省", "少", "類", "米", "光", "料", "火"],
+            "text":"火",
+            "alt_text":["常", "當", "省", "少", "類", "米", "光", "料", "火"],
             "caps":"f",
             "shift":"f",
             "alt_keycodes":[],
@@ -308,8 +308,8 @@
         },
         "34":        
         {
-            "principal":"土",
-            "alternatives":["地", "喜", "趣", "城", "起", "場", "去", "塔", "土"],
+            "text":"土",
+            "alt_text":["地", "喜", "趣", "城", "起", "場", "去", "塔", "土"],
             "caps":"g",
             "shift":"g",
             "alt_keycodes":[2,3,4,5,6,7,8,9,10],
@@ -317,8 +317,8 @@
         },
         "35":        
         {
-            "principal":"竹",
-            "alternatives":["的", "科", "和", "所", "自", "與", "行", "生", "竹"],
+            "text":"竹",
+            "alt_text":["的", "科", "和", "所", "自", "與", "行", "生", "竹"],
             "caps":"h",
             "shift":"h",
             "alt_keycodes":[2,3,4,5,6,7,8,9,10],
@@ -326,8 +326,8 @@
         },
         "36":        
         {
-            "principal":"十",
-            "alternatives":["者", "家", "南", "事", "字", "教", "都", "定", "十"],
+            "text":"十",
+            "alt_text":["者", "家", "南", "事", "字", "教", "都", "定", "十"],
             "caps":"j",
             "shift":"j",
             "alt_keycodes":[2,3,4,5,6,7,8,9,10],
@@ -335,8 +335,8 @@
         },
         "37":        
         {
-            "principal":"大",
-            "alternatives":["在", "有", "大", "加", "希", "力", "布", "乂", "㐅"],
+            "text":"大",
+            "alt_text":["在", "有", "大", "加", "希", "力", "布", "乂", "㐅"],
             "caps":"k",
             "shift":"k",
             "alt_keycodes":[2,3,4,5,6,7,8,9,10],
@@ -344,8 +344,8 @@
         },
         "38":        
         {
-            "principal":"中",
-            "alternatives":["中", "版", "由", "被", "北", "裡", "非", "史", "數"],
+            "text":"中",
+            "alt_text":["中", "版", "由", "被", "北", "裡", "非", "史", "數"],
             "caps":"l",
             "shift":"l",
             "alt_keycodes":[2,3,4,5,6,7,8,9,10],
@@ -353,8 +353,8 @@
         },
         "39":        
         {
-            "principal":";",
-            "alternatives":[],
+            "text":";",
+            "alt_text":[],
             "caps":":",
             "shift":":",
             "alt_keycodes":[],
@@ -362,8 +362,8 @@
         },
         "40":        
         {
-            "principal":"'",
-            "alternatives":[],
+            "text":"'",
+            "alt_text":[],
             "caps":"\"",
             "shift":"\"",
             "alt_keycodes":[],
@@ -371,8 +371,8 @@
         },
         "28":
         {
-            "principal":"enter",
-            "alternatives":[],
+            "text":"enter",
+            "alt_text":[],
             "caps":"enter",
             "shift":"enter",
             "alt_keycodes":[],
@@ -380,8 +380,8 @@
         },
         "!#1":
         {
-            "principal":"!#1",
-            "alternatives":[],
+            "text":"!#1",
+            "alt_text":[],
             "caps":"!#1",
             "shift":"!#1",
             "alt_keycodes":[],
@@ -389,8 +389,8 @@
         },
         "emoj":
         {
-            "principal":"emoj",
-            "alternatives":[],
+            "text":"emoj",
+            "alt_text":[],
             "caps":"",
             "shift":"",
             "alt_keycodes":[],
@@ -398,8 +398,8 @@
         },
         "44":
         {
-            "principal":"z",
-            "alternatives":[],
+            "text":"z",
+            "alt_text":[],
             "caps":"Z",
             "shift":"Z",
             "alt_keycodes":[],
@@ -407,8 +407,8 @@
         },
         "45":
         {
-            "principal":"難",
-            "alternatives":["楽", "戸", "蔵", "撃", "様", "舎", "黒", "徳", "増"],
+            "text":"難",
+            "alt_text":["楽", "戸", "蔵", "撃", "様", "舎", "黒", "徳", "増"],
             "caps":"x",
             "shift":"x",
             "alt_keycodes":[2,3,4,5,6,7,8,9,10],
@@ -416,8 +416,8 @@
         },
         "46":
         {
-            "principal":"金",
-            "alternatives":["分", "公", "金", "曾", "鐵", "錄", "父", "卻", "弟"],
+            "text":"金",
+            "alt_text":["分", "公", "金", "曾", "鐵", "錄", "父", "卻", "弟"],
             "caps":"c",
             "shift":"c",
             "alt_keycodes":[2,3,4,5,6,7,8,9,10],
@@ -425,8 +425,8 @@
         },
         "47":
         {
-            "principal":"女",
-            "alternatives":["以", "維", "如", "好", "經", "編", "將", "始", "女"],
+            "text":"女",
+            "alt_text":["以", "維", "如", "好", "經", "編", "將", "始", "女"],
             "caps":"v",
             "shift":"v",
             "alt_keycodes":[2,3,4,5,6,7,8,9,10],
@@ -434,8 +434,8 @@
         },
         "48":
         {
-            "principal":"月",
-            "alternatives":["月", "用", "目", "同", "體", "縣", "受", "軍", "助"],
+            "text":"月",
+            "alt_text":["月", "用", "目", "同", "體", "縣", "受", "軍", "助"],
             "caps":"b",
             "shift":"b",
             "alt_keycodes":[2,3,4,5,6,7,8,9,10],
@@ -443,8 +443,8 @@
         },
         "49":
         {
-            "principal":"弓",
-            "alternatives":["了", "名", "多", "及", "解", "外", "子", "小", "弓"],
+            "text":"弓",
+            "alt_text":["了", "名", "多", "及", "解", "外", "子", "小", "弓"],
             "caps":"n",
             "shift":"n",
             "alt_keycodes":[2,3,4,5,6,7,8,9,10],
@@ -452,8 +452,8 @@
         },
         "50":
         {
-            "principal":"一",
-            "alternatives":["一", "不", "百", "下", "可", "到", "面", "要", "理"],
+            "text":"一",
+            "alt_text":["一", "不", "百", "下", "可", "到", "面", "要", "理"],
             "caps":"m",
             "shift":"m",
             "alt_keycodes":[2,3,4,5,6,7,8,9,10],
@@ -461,8 +461,8 @@
         },
         "51":
         {
-            "principal":",",
-            "alternatives":[],
+            "text":",",
+            "alt_text":[],
             "caps":"<",
             "shift":"<",
             "alt_keycodes":[],
@@ -470,8 +470,8 @@
         },
         "52":
         {
-            "principal":".",
-            "alternatives":[],
+            "text":".",
+            "alt_text":[],
             "caps":">",
             "shift":">",
             "alt_keycodes":[],
@@ -479,8 +479,8 @@
         },
         "53":
         {
-            "principal":"/",
-            "alternatives":[],
+            "text":"/",
+            "alt_text":[],
             "caps":"?",
             "shift":"?",
             "alt_keycodes":[],
@@ -488,8 +488,8 @@
         },
         "54":
         {
-            "principal":"shift",
-            "alternatives":[],
+            "text":"shift",
+            "alt_text":[],
             "caps":"caps_lock",
             "shift":"shift",
             "alt_keycodes":[],
@@ -497,8 +497,8 @@
         },
         "97":
         {
-            "principal":"Ctrl",
-            "alternatives":[],
+            "text":"Ctrl",
+            "alt_text":[],
             "caps":"Ctrl",
             "shift":"Ctrl",
             "alt_keycodes":[],
@@ -506,8 +506,8 @@
         },
         "56":
         {
-            "principal":"Alt",
-            "alternatives":[],
+            "text":"Alt",
+            "alt_text":[],
             "caps":"Alt",
             "shift":"Alt",
             "alt_keycodes":[],
@@ -515,8 +515,8 @@
         },
         "57":
         {
-            "principal":"Space",
-            "alternatives":[],
+            "text":"Space",
+            "alt_text":[],
             "caps":"Space",
             "shift":"Space",
             "alt_keycodes":[],
@@ -524,8 +524,8 @@
         },
         "101":
         {
-            "principal":"AltGr",
-            "alternatives":[],
+            "text":"AltGr",
+            "alt_text":[],
             "caps":"AltGr",
             "shift":"AltGr",
             "alt_keycodes":[],
@@ -533,8 +533,8 @@
         },
         "lang":
         {
-            "principal":"lang",
-            "alternatives":[],
+            "text":"lang",
+            "alt_text":[],
             "caps":"lang",
             "shift":"lang",
             "alt_keycodes":[],
@@ -542,8 +542,8 @@
         },
         "hide":
         {
-            "principal":"hide",
-            "alternatives":[],
+            "text":"hide",
+            "alt_text":[],
             "caps":"hide",
             "shift":"hide",
             "alt_keycodes":[],
