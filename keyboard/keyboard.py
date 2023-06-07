@@ -1,6 +1,5 @@
 #! /usr/bin/env python3
-
-import tkinter as tk
+from tkinter import *
 import keycodes as keycode
 from layouts.keymap import Keymap
 
@@ -187,37 +186,27 @@ with open(keydown, "w") as skeydown, open(keyup, "w") as skeyup:
         return lambda kcode=k : send_keycode(kcode, s)
 
 
-    win = tk.Tk()
-    win.geometry("{}x200+0-0".format(win.winfo_screenwidth()))
+    win = Tk()
+    win.geometry("{}x250+0-0".format(win.winfo_screenwidth()))
     win.attributes('-type', 'dock')
+    win.configure(background=chZH_keymap.background.to_hex())
 
-
-    x = 0
-    y = 0
-
-#    for k in keymap_lst.keys():
-#        if not k.startswith("."):
-#            b = tk.Button(text=k, width=3, height=2)
-#            b.bind("<ButtonPress>", lambda eventp, kcode=keymap_lst[k] : send_keycode(kcode, 1))
-#            b.bind("<ButtonRelease>", lambda eventr, kcode=keymap_lst[k] : send_keycode(kcode, 0))
-#            b.place(x=x, y=y)
-#            x += 50
-#            if x + 50 >= win.winfo_screenwidth():
-#                y += 50
-#                x = 0
-    for l in chZH_keymap.keys:
-        for c in l:
-            b = tk.Button(text=c.keycode.text, width=3, height=2)
+    buttons = []
+    for i in range(0, len(chZH_keymap.keys)):
+        buttons.append([])
+        for j in range(0, len(chZH_keymap.keys[i])):
+            c = chZH_keymap.keys[i][j]
+            b = Button(text=c.keycode.text,  width = 3, height = 2)
             b.bind("<ButtonPress>", lambda eventp, kcode=c.keycode.keycode : send_keycode(kcode, 1))
             b.bind("<ButtonRelease>", lambda eventr, kcode=c.keycode.keycode : send_keycode(kcode, 0))
-            b.place(x=x, y=y)
-            x += 50
-            if x + 50 >= win.winfo_screenwidth():
-                y += 50
-                x = 0
+            b.configure(background=c.key_style.background.to_hex(), foreground="white")
+            buttons[i].append(b)
+            buttons[i][j].grid(row = i, column = j, sticky=N+S+E+W)
+            if (c.keycode.text == "hide"):
+                b.bind("<ButtonPress>", lambda eventp : exit(0))
 
-    button_exit = tk.Button(text="exit", width=15, height=2, command=exit)
-    button_exit.place(x=x+50, y=y)
+            
+    
 
     win.mainloop()
 

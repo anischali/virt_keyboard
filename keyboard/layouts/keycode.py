@@ -17,6 +17,8 @@ class Color(object):
         self.green = int(js["g"]) if js is not None else g
         self.blue = int(js["b"]) if js is not None else b
 
+    def to_hex(self):
+        return "#{:02x}{:02x}{:02x}".format(self.red, self.green, self.blue)
 
 
 class KeyStyle(object):

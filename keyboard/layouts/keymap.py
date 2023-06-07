@@ -1,5 +1,5 @@
 from .style import Style
-from .keycode import Key
+from .keycode import Color, Key
 import json
 
 class Keymap(object):
@@ -18,8 +18,10 @@ class Keymap(object):
         self.keymap_style = self.style.get_keymap_style()
         self.margins = 0 if self.keymap_style is None else self.keymap_style["margins"]
         self.keys_height = 5 if self.keymap_style is None else self.keymap_style["keys_height"]
+        self.background = Color(js=self.keymap_style["background"])
 
         self.keys = []
+        self.keys_dict = {}
         x = 0
         y = 0
         for line in self.keymap:
@@ -30,6 +32,7 @@ class Keymap(object):
                 k.key_style.pos_y = y
                 x += k.key_style.width + self.margins
                 l.append(k)
+                self.keys_dict[col] = k
             x = 0
             y += self.margins + self.keys_height
 
