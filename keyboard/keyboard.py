@@ -3,8 +3,8 @@ from tkinter import *
 import keycodes as keycode
 from layouts.keymap import Keymap
 
-keydown="/sys/devices/platform/virt-keyboard.0/keydown"
-keyup="/sys/devices/platform/virt-keyboard.0/keyup"
+keydown = "/sys/devices/platform/virt-keyboard.0/keydown"
+keyup = "/sys/devices/platform/virt-keyboard.0/keyup"
 
 chZH_keymap = Keymap("chZH")
 
@@ -169,22 +169,31 @@ keymap_lst = {
     ".UNKNOWN": keycode.KEY_UNKNOWN,
 }
 
+
 with open(keydown, "w") as skeydown, open(keyup, "w") as skeyup:
 
-    
     def send_keycode(kcode, status):
         print("keycode: {} event: {}".format(kcode, status))
+
         if status:
             skeydown.write(str(kcode))
             skeydown.flush()
-            pass
         else:
             skeyup.write(str(kcode))
             skeyup.flush()
-    
-    def make_event(k, s):
-        return lambda kcode=k : send_keycode(kcode, s)
 
+    def toggle_key(key):
+        if key.hold == False:
+            skeydown.write(str(key.keycode.keycode))
+            skeydown.flush()
+            key.hold = True
+        else:
+            skeyup.write(str(key.keycode.keycode))
+            skeyup.flush()
+            key.hold = False
+
+    def make_event(k, s):
+        return lambda kcode=k: send_keycode(kcode, s)
 
     win = Tk()
     win.geometry("{}x250+0-0".format(win.winfo_screenwidth()))
@@ -196,17 +205,20 @@ with open(keydown, "w") as skeydown, open(keyup, "w") as skeyup:
         buttons.append([])
         for j in range(0, len(chZH_keymap.keys[i])):
             c = chZH_keymap.keys[i][j]
-            b = Button(text=c.keycode.text,  width = 3, height = 2)
-            b.bind("<ButtonPress>", lambda eventp, kcode=c.keycode.keycode : send_keycode(kcode, 1))
-            b.bind("<ButtonRelease>", lambda eventr, kcode=c.keycode.keycode : send_keycode(kcode, 0))
-            b.configure(background=c.key_style.background.to_hex(), foreground="white")
-            buttons[i].append(b)
-            buttons[i][j].grid(row = i, column = j, sticky=N+S+E+W)
-            if (c.keycode.text == "hide"):
-                b.bind("<ButtonPress>", lambda eventp : exit(0))
+            b = Button(text=c.keycode.text,  width=3, height=2)
+            if str(c.keycode.keycode).isdigit() and int(c.keycode.key_type) == 1:
+                b.bind("<ButtonPress>", lambda eventp, key=c: toggle_key(key))
+            else:
+                b.bind("<ButtonPress>", lambda eventp,
+                       kcode=c.keycode.keycode: send_keycode(kcode, 1))
+                b.bind("<ButtonRelease>", lambda eventr,
+                       kcode=c.keycode.keycode: send_keycode(kcode, 0))
 
-            
-    
+            b.configure(background=c.key_style.background.to_hex(),
+                        foreground="white")
+            buttons[i].append(b)
+            buttons[i][j].grid(row=i, column=j, sticky=N+S+E+W)
+            if (c.keycode.text == "hide"):
+                b.bind("<ButtonPress>", lambda eventp: exit(0))
 
     win.mainloop()
-
