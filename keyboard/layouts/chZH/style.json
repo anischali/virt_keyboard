@@ -56,6 +56,10 @@
             "0":
             {    
                 "style":"simple_btn"
+            },
+            "2":
+            {    
+                "style":"simple_btn"
             }
         },
         "by_keycode":

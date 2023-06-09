@@ -25,8 +25,9 @@ class KeyStyle(object):
 
     def __init__(self, style:Style, kc) -> None:
 
-        stl = style.get_style_by_type(kc.key_type) if kc is not None else None 
         stl = style.get_style_by_keycode(kc.keycode) if kc is not None else None
+        if stl is None:
+            stl = style.get_style_by_type(kc.key_type) if kc is not None else None 
         
         self.width = 0 if stl is None else stl["width"]
         self.background = Color(r=0,g=0,b=0) if stl is None else Color(js=stl["background"])
