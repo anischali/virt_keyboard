@@ -18,6 +18,12 @@
             "background":{"r":80,"g":80,"b":80},
             "color":{"r":255,"g":255,"b":255}
         },
+        "alt_btn": {
+            "width": 3,
+            
+            "background":{"r":80,"g":80,"b":80},
+            "color":{"r":255,"g":255,"b":255}
+        },
         "space_btn": {
             "width": 6,
             
@@ -90,7 +96,15 @@
             },
             "emoj":
             {
-                "style":"lang_btn"
+                "style":"emoj_btn"
+            },
+            "100":
+            {
+                "style":"alt_btn"
+            },
+            "56":
+            {
+                "style":"alt_btn"
             }
         }
     }

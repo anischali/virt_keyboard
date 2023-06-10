@@ -2,50 +2,56 @@
     "keymap_style":{
         "width":300,
         "height":100,
-        "background":{"r":26,"g":26,"b":26},
+        "background":{"r":48,"g":48,"b":42},
         "margins":50,
-        "keys_height": 1
+        "keys_height": 2
     },
     "style_def": {
         "simple_btn": {
             "width": 3,
-            "background":{"r":52, "g":52,"b":52},
+            "background":{"r":52,"g":52,"b":52},
             "color":{"r":255,"g":255,"b":255}
         },
         "shift_btn": {
             "width": 3,
             
-            "background":{"r":52, "g":52,"b":52},
+            "background":{"r":52,"g":52,"b":52},
+            "color":{"r":255,"g":255,"b":255}
+        },
+        "alt_btn": {
+            "width": 3,
+            
+            "background":{"r":52,"g":52,"b":52},
             "color":{"r":255,"g":255,"b":255}
         },
         "space_btn": {
-            "width": 3,
+            "width": 6,
             
-            "background":{"r":52, "g":52,"b":52},
+            "background":{"r":52,"g":52,"b":52},
             "color":{"r":255,"g":255,"b":255}
         },
         "ctrl_btn": {
             "width": 3,
             
-            "background":{"r":52, "g":52,"b":52},
+            "background":{"r":52,"g":52,"b":52},
             "color":{"r":255,"g":255,"b":255}
         },
         "enter_btn": {
             "width": 3,
             
-            "background":{"r":52, "g":52,"b":52},
+            "background":{"r":52,"g":52,"b":52},
             "color":{"r":255,"g":255,"b":255}
         },
         "lang_btn": {
             "width": 3,
             
-            "background":{"r":52, "g":52,"b":52},
+            "background":{"r":52,"g":52,"b":52},
             "color":{"r":255,"g":255,"b":255}
         },
         "emoj": {
             "width": 3,
             
-            "background":{"r":52, "g":52,"b":52},
+            "background":{"r":52,"g":52,"b":52},
             "color":{"r":255,"g":255,"b":255}
         }
     },
@@ -90,7 +96,15 @@
             },
             "emoj":
             {
-                "style":"lang_btn"
+                "style":"emoj_btn"
+            },
+            "100":
+            {
+                "style":"alt_btn"
+            },
+            "56":
+            {
+                "style":"alt_btn"
             }
         }
     }
