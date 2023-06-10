@@ -3,6 +3,7 @@
 
 
 from tkinter import *
+from tkinter import dnd
 from layouts.keymap import Keymap
 
 
@@ -66,15 +67,14 @@ class Keyboard(Frame):
         
         if hide != self.hidden:
             self.hidden = hide
-            self.window.geometry("{}x{}+0-0".format(win.winfo_screenwidth(), (2 if hide else 250)))
+            self.window.geometry("{}x{}+0-0".format(win.winfo_screenwidth(), (5 if hide else 250)))
         
     
     def setup_view(self):
         self.curr_keymap = self.get_keymap(self.current_lang)
         self.window.configure(background=self.curr_keymap.background.to_hex())
-        self.bind("<MouseWheel>", self.hide_keyboard(False))
-        
         self.configure(bg=self.curr_keymap.background.to_hex())
+        
         
         for i in range(0, len(self.curr_keymap.keys)):
             row = Frame(self)
@@ -126,9 +126,10 @@ keyboard = Keyboard(win)
 keyboard.add_language("chCN", "Simplified Chinese")
 keyboard.add_language("chZH", "Traditional Chinese")
 
-win.geometry("{}x0+0-0".format(win.winfo_screenwidth()))
+win.geometry("{}x250+0-0".format(win.winfo_screenwidth()))
 win.attributes('-type', 'dock')
 keyboard.setup_view()
 keyboard.hide_keyboard(False)
+win.bind('<Enter>', lambda eventp: keyboard.hide_keyboard(False))
 
 win.mainloop()
