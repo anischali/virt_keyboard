@@ -297,7 +297,7 @@
             "caps":"caps_lock",
             "shift":"shift",
             "alt_keycodes":[],
-            "key_type":0,
+            "key_type":1,
             "action":""
         },
         "30":        
@@ -419,6 +419,15 @@
             "alt_keycodes":[],
             "key_type":0,
             "action":""
+        },
+        "97":
+        {
+            "text":"Ctrl",
+            "alt_text":[],
+            "caps":"Ctrl",
+            "shift":"Ctrl",
+            "alt_keycodes":[],
+            "key_type":1
         },
         "!#1":
         {
@@ -547,7 +556,7 @@
             "alt_keycodes":[],
             "key_type":1
         },
-        "97":
+        "29":
         {
             "text":"Ctrl",
             "alt_text":[],

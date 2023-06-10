@@ -42,6 +42,7 @@ class Key(object):
         
         self.keycode = KeyCode(kc, js)
         self.key_style = KeyStyle(stl, self.keycode)
+        self.key_button = None
         self.pressed = False
         self.hold = False
 

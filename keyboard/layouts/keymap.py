@@ -19,7 +19,9 @@ class Keymap(object):
         self.margins = 0 if self.keymap_style is None else self.keymap_style["margins"]
         self.keys_height = 5 if self.keymap_style is None else self.keymap_style["keys_height"]
         self.background = Color(js=self.keymap_style["background"])
+        self.active_bg = Color(js=self.keymap_style["active_bg"])
 
+        
         self.keys = []
         self.keys_dict = {}
         x = 0

@@ -6,7 +6,7 @@ class Style(object):
 
     def __init__(self, lang) -> None:
         self.style_json = None
-        with open(os.path.realpath("layouts/{}/style.json".format(lang)), "r") as f:
+        with open(os.path.realpath("./layouts/{}/style.json".format(lang)), "r") as f:
             self.style_json = json.load(f)
         
         self.style_def = self.style_json["style_def"]

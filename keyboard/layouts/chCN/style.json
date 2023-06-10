@@ -3,53 +3,87 @@
         "width":300,
         "height":100,
         "background":{"r":48,"g":48,"b":42},
+        "active_bg":{"r":33, "g":150, "b":243},
         "margins":50,
         "keys_height": 2
     },
     "style_def": {
         "simple_btn": {
-            "width": 3,
+            "width": 2,
             "background":{"r":52,"g":52,"b":52},
             "color":{"r":255,"g":255,"b":255}
         },
         "shift_btn": {
-            "width": 3,
+            "width": 11,
             
             "background":{"r":52,"g":52,"b":52},
             "color":{"r":255,"g":255,"b":255}
         },
         "alt_btn": {
-            "width": 3,
+            "width": 7,
             
             "background":{"r":52,"g":52,"b":52},
             "color":{"r":255,"g":255,"b":255}
         },
-        "space_btn": {
+        "num_btn": {
             "width": 6,
             
             "background":{"r":52,"g":52,"b":52},
             "color":{"r":255,"g":255,"b":255}
         },
+        "space_btn": {
+            "width": 28,
+            
+            "background":{"r":52,"g":52,"b":52},
+            "color":{"r":255,"g":255,"b":255}
+        },
         "ctrl_btn": {
-            "width": 3,
+            "width": 9,
             
             "background":{"r":52,"g":52,"b":52},
             "color":{"r":255,"g":255,"b":255}
         },
         "enter_btn": {
-            "width": 3,
+            "width": 6,
             
             "background":{"r":52,"g":52,"b":52},
             "color":{"r":255,"g":255,"b":255}
         },
         "lang_btn": {
-            "width": 3,
+            "width": 6,
             
             "background":{"r":52,"g":52,"b":52},
             "color":{"r":255,"g":255,"b":255}
         },
-        "emoj": {
-            "width": 3,
+        "emoj_btn": {
+            "width": 10,
+            
+            "background":{"r":52,"g":52,"b":52},
+            "color":{"r":255,"g":255,"b":255}
+        },
+        "hide_btn": {
+            "width": 11,
+            
+            "background":{"r":52,"g":52,"b":52},
+            "color":{"r":255,"g":255,"b":255}
+        },
+        "backspace":
+        {
+            "width": 7,
+            
+            "background":{"r":52,"g":52,"b":52},
+            "color":{"r":255,"g":255,"b":255}
+        },
+        "tab":
+        {
+            "width": 5,
+            
+            "background":{"r":52,"g":52,"b":52},
+            "color":{"r":255,"g":255,"b":255}
+        },
+        "esc":
+        {
+            "width": 4,
             
             "background":{"r":52,"g":52,"b":52},
             "color":{"r":255,"g":255,"b":255}
@@ -86,6 +120,10 @@
             {
                 "style":"ctrl_btn"
             },
+            "29":
+            {
+                "style":"ctrl_btn"
+            },
             "28":
             {
                 "style":"enter_btn"
@@ -98,6 +136,10 @@
             {
                 "style":"emoj_btn"
             },
+            "hide":
+            {
+                "style":"hide_btn"
+            },
             "100":
             {
                 "style":"alt_btn"
@@ -105,6 +147,22 @@
             "56":
             {
                 "style":"alt_btn"
+            },
+            "14":
+            {
+                "style":"backspace"
+            },
+            "15":
+            {
+                "style":"tab"
+            },
+            "1":
+            {
+                "style":"esc"
+            },
+            "!#1":
+            {
+                "style":"num_btn"
             }
         }
     }
