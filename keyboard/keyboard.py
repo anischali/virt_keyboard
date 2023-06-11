@@ -3,7 +3,6 @@
 
 
 from tkinter import *
-from tkinter import dnd
 from layouts.keymap import Keymap
 
 
@@ -57,7 +56,7 @@ class Keyboard(Frame):
             self.skey_up.flush()
             key.key_button.configure(background=key.key_style.background.to_hex())
             key.hold = False
-    
+        
     def get_keymap(self, lang):
         
         if lang in self.keymaps.keys():
@@ -67,7 +66,7 @@ class Keyboard(Frame):
         
         if hide != self.hidden:
             self.hidden = hide
-            self.window.geometry("{}x{}+0-0".format(win.winfo_screenwidth(), (5 if hide else 250)))
+            self.window.geometry("{}x{}+0-0".format(win.winfo_screenwidth(), (3 if hide else 250)))
         
     
     def setup_view(self):
@@ -80,11 +79,11 @@ class Keyboard(Frame):
             row = Frame(self)
             for j in range(0, len(self.curr_keymap.keys[i])):
                 c = self.curr_keymap.keys[i][j]
-                b = Button(row, text=c.keycode.text,  
+                b = Button(row, text=c.keycode.text, relief="flat",
                        width=c.key_style.width, height=self.curr_keymap.keys_height, 
-                       highlightthickness=1, 
+                       highlightthickness=2,
                        highlightbackground=self.curr_keymap.background.to_hex())
-
+                
                 if str(c.keycode.keycode).isdigit() and int(c.keycode.key_type) == 1:
                     b.bind("<ButtonPress>", lambda eventp, key=c: keyboard.toggle_key(key))
                 else:
@@ -93,7 +92,7 @@ class Keyboard(Frame):
                     b.bind("<ButtonRelease>", lambda eventr,
                        key=c: keyboard.send_keycode(key, 0))
 
-                b.configure(background=c.key_style.background.to_hex(),
+                b.configure(bg=c.key_style.background.to_hex(),
                     foreground="white", activebackground=self.curr_keymap.background.to_hex())
         
                 if (c.keycode.text == "hide"):
