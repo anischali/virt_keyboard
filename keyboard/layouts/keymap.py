@@ -15,6 +15,8 @@ class Keymap(object):
             self.keycodes_json = js["keycodes"] 
 
         self.keymap = self.keymap_json["keymap"]
+        self.name = self.keymap_json["name"]
+        self.description = self.keymap_json["description"]
         self.keymap_style = self.style.get_keymap_style()
         self.margins = 0 if self.keymap_style is None else self.keymap_style["margins"]
         self.keys_height = 5 if self.keymap_style is None else self.keymap_style["keys_height"]

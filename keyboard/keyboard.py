@@ -21,16 +21,13 @@ class Keyboard(Frame):
         self.keymaps = {}
         self.skey_down = open(Keyboard.keydown, "w")
         self.skey_up = open(Keyboard.keyup, "w")
-        self.current_lang = "chCN"
+        self.current_lang = "enUS"
         self.curr_keymap = self.get_keymap(self.current_lang)
         self.ws = None
         self.hidden = True
 
-    def add_language(self, lang, description):
-        self.keymaps[lang] = {
-            "description": description,
-            "keymap": Keymap(lang)
-        }
+    def add_language(self, lang):
+        self.keymaps[lang] = Keymap(lang)
     
     def change_language(self):
         pass
@@ -60,7 +57,7 @@ class Keyboard(Frame):
     def get_keymap(self, lang):
         
         if lang in self.keymaps.keys():
-            return self.keymaps[lang]["keymap"]
+            return self.keymaps[lang]
     
     def hide_keyboard(self, hide):
         
@@ -80,9 +77,10 @@ class Keyboard(Frame):
             for j in range(0, len(self.curr_keymap.keys[i])):
                 c = self.curr_keymap.keys[i][j]
                 b = Button(row, text=c.keycode.text, relief="flat",
-                       width=c.key_style.width, height=self.curr_keymap.keys_height, 
-                       highlightthickness=2,
-                       highlightbackground=self.curr_keymap.background.to_hex())
+                            width=c.key_style.width, 
+                            height=self.curr_keymap.keys_height,
+                            highlightthickness=2, 
+                            highlightbackground=self.curr_keymap.background.to_hex())
                 
                 if str(c.keycode.keycode).isdigit() and int(c.keycode.key_type) == 1:
                     b.bind("<ButtonPress>", lambda eventp, key=c: keyboard.toggle_key(key))
@@ -99,9 +97,8 @@ class Keyboard(Frame):
                     b.bind("<ButtonPress>", lambda eventp: keyboard.hide_keyboard(True))
                 
                 b.grid(row=0, column=j)
-                
                 c.key_button = b
-            row.pack(expand=True)
+            row.pack(expand=1)
             
         self.pack(expand=True)
         
@@ -122,8 +119,9 @@ class Keyboard(Frame):
 
 win = Tk()
 keyboard = Keyboard(win)
-keyboard.add_language("chCN", "Simplified Chinese")
-keyboard.add_language("chZH", "Traditional Chinese")
+keyboard.add_language("chCN")
+keyboard.add_language("chZH")
+keyboard.add_language("enUS")
 
 win.geometry("{}x250+0-0".format(win.winfo_screenwidth()))
 win.attributes('-type', 'dock')
